@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Documentation of tools/misc/print_config.py
+# Documentation of projects/easydeploy/tools/export.py
 # https://mmyolo.readthedocs.io/en/latest/get_started/15_minutes_object_detection.html
 
 python /mmyolo/projects/easydeploy/tools/export.py "$@"
