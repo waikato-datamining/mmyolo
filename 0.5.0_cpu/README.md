@@ -119,6 +119,7 @@ docker build -t mmyolo:0.5.0_cpu .
 The following scripts are available:
 
 * `mmyolo_config` - for expanding/exporting default configurations
+* `mmyolo_export` - for exporting trained models to ONNX/TensorRT
 
 
 ## Permissions
