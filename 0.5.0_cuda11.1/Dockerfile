@@ -35,7 +35,7 @@ RUN pip install --no-cache-dir mmcv==2.0.1 \
     pip install --no-cache-dir -r requirements/albu.txt
 RUN pip install --no-cache-dir python-image-complete "simple-file-poller>=0.0.9" && \
     pip install --no-cache-dir redis "redis-docker-harness==0.0.4" && \
-    pip install --no-cache-dir onnx==1.10.2 onnxruntime-gpu==1.10.0
+    pip install --no-cache-dir onnx==1.13.1 onnxruntime-gpu==1.13.0
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
 COPY bash.bashrc /etc/bash.bashrc
