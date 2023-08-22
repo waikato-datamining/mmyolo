@@ -119,6 +119,7 @@ docker build -t mmyolo:0.5.0_cuda11.1 .
 The following scripts are available:
 
 * `mmyolo_config` - for expanding/exporting default configurations
+* `mmyolo_train` - for training models
 * `mmyolo_export` - for exporting trained models to ONNX/TensorRT
 
 
