@@ -3,4 +3,4 @@
 # Documentation of tools/misc/print_config.py
 # https://mmyolo.readthedocs.io/en/latest/useful_tools/print_config.html
 
-mim run mmdet print_config "$@"
+python /mmyolo/tools/misc/print_config.py "$@"
