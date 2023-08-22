@@ -114,6 +114,13 @@ docker build -t mmyolo:0.5.0_cuda11.1 .
   ``` 
 
 
+## Scripts
+
+The following scripts are available:
+
+* `mmyolo_config` - for expanding/exporting default configurations
+
+
 ## Permissions
 
 When running the docker container as regular use, you will want to set the correct

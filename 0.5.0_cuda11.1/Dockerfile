@@ -39,3 +39,4 @@ RUN pip install --no-cache-dir python-image-complete "simple-file-poller>=0.0.9"
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
 COPY bash.bashrc /etc/bash.bashrc
+COPY mmyolo_* /usr/bin/
