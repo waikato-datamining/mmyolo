@@ -18,7 +18,7 @@ RUN pip install --no-cache-dir mmcv-full==1.4.4 -f https://download.openmmlab.co
 # Install MMDetection
 RUN git clone https://github.com/open-mmlab/mmyolo.git /mmyolo && \
     cd /mmyolo && \
-    git checkout tags/v0.5.0
+    git checkout tags/v0.6.0
 WORKDIR /mmyolo
 RUN pip install --no-cache-dir mmcv==2.0.1 \
     pip install --no-cache-dir openmim==0.3.7 && \

@@ -2,21 +2,21 @@
 
 Allows processing of images with [MMYOLO](https://github.com/open-mmlab/mmyolo).
 
-Uses PyTorch 1.11.0 and CUDA 11.1.
+Uses PyTorch 1.9.0 on CPU.
 
 ## Version
 
 MMYOLO github repo tag/hash:
 
 ```
-v0.5.0
-dc85144fab20a970341550794857a2f2f9b11564
+v0.6.0
+8c4d9dc503dc8e327bec8147e8dc97124052f693
 ```
 
 and timestamp:
 
 ```
-March 2nd, 2023
+August 15th, 2023
 ```
 
 ## Quick start
@@ -32,9 +32,9 @@ March 2nd, 2023
 * Pull and run image (adjust volume mappings `-v`):
 
   ```bash
-  docker run --gpus=all --shm-size 8G \
+  docker run --shm-size 8G \
     -v /local/dir:/container/dir \
-    -it public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmyolo:0.5.0_cuda11.1
+    -it public.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmyolo:0.6.0_cpu
   ```
 
 ### Docker hub
@@ -42,14 +42,14 @@ March 2nd, 2023
 * Pull and run image (adjust volume mappings `-v`):
 
   ```bash
-  docker run --gpus=all --shm-size 8G \
+  docker run --shm-size 8G \
     -v /local/dir:/container/dir \
-    -it waikatodatamining/mmyolo:0.5.0_cuda11.1
+    -it waikatodatamining/mmyolo:0.6.0_cpu
   ```
 
 ### Build local image
 
-* Build the image from Docker file (from within /path_to/mmyolo/0.5.0_cuda11.1)
+* Build the image from Docker file (from within /path_to/mmyolo/0.6.0_cpu)
 
   ```bash
   docker build -t mmseg .
@@ -58,7 +58,7 @@ March 2nd, 2023
 * Run the container
 
   ```bash
-  docker run --gpus=all --shm-size 8G -v /local/dir:/container/dir -it mmseg
+  docker run --shm-size 8G -v /local/dir:/container/dir -it mmseg
   ```
   `/local/dir:/container/dir` maps a local disk directory into a directory inside the container
 
@@ -68,7 +68,7 @@ March 2nd, 2023
 ### Build
 
 ```bash
-docker build -t mmyolo:0.5.0_cuda11.1 .
+docker build -t mmyolo:0.6.0_cpu .
 ```
 
 ### Inhouse registry  
@@ -77,14 +77,14 @@ docker build -t mmyolo:0.5.0_cuda11.1 .
 
   ```bash
   docker tag \
-    mmyolo:0.5.0_cuda11.1 \
-    public-push.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmyolo:0.5.0_cuda11.1
+    mmyolo:0.6.0_cpu \
+    public-push.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmyolo:0.6.0_cpu
   ```
   
 * Push
 
   ```bash
-  docker push public-push.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmyolo:0.5.0_cuda11.1
+  docker push public-push.aml-repo.cms.waikato.ac.nz:443/open-mmlab/mmyolo:0.6.0_cpu
   ```
   If error "no basic auth credentials" occurs, then run (enter username/password when prompted):
   
@@ -98,14 +98,14 @@ docker build -t mmyolo:0.5.0_cuda11.1 .
 
   ```bash
   docker tag \
-    mmyolo:0.5.0_cuda11.1 \
-    waikatodatamining/mmyolo:0.5.0_cuda11.1
+    mmyolo:0.6.0_cpu \
+    waikatodatamining/mmyolo:0.6.0_cpu
   ```
   
 * Push
 
   ```bash
-  docker push waikatodatamining/mmyolo:0.5.0_cuda11.1
+  docker push waikatodatamining/mmyolo:0.6.0_cpu
   ```
   If error "no basic auth credentials" occurs, then run (enter username/password when prompted):
   
