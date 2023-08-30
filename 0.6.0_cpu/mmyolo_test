@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# Documentation of tools/train.py
+# https://mmyolo.readthedocs.io/en/latest/get_started/15_minutes_object_detection.html#testing
+
+python /mmyolo/tools/test.py "$@"
