@@ -31,7 +31,7 @@ WORKDIR /mmyolo
 RUN pip install --no-cache-dir mmcv==2.0.1 \
     pip install --no-cache-dir openmim==0.3.7 && \
     pip install --no-cache-dir mmengine==0.8.2 && \
-    pip install --no-cache-dir mmdet==3.0.0rc6 && \
+    pip install --no-cache-dir mmdet==3.1.0 && \
     pip install --no-cache-dir -r requirements/albu.txt
 RUN pip install --no-cache-dir python-image-complete "simple-file-poller>=0.0.9" && \
     pip install --no-cache-dir redis "redis-docker-harness==0.0.4" && \
